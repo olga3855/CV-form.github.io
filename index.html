@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1 class="site-header">Test app</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="form-group">
+            <label for="text">Text</label>
+            <input type="text" class="form-control" id="text" placeholder="Type some text here">
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label for="color">Color</label>
+            <input type="text" class="form-control" id="color" placeholder="Type color here">
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group">
+            <label for="marker">Font weight</label>
+            <select class="form-control" id="weight">
+              <option value="normal">Normal</option>
+              <option value="bold">Bold</option>
+              <option value="lighter">Light</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-3 btn-container">
+          <button class="btn btn-primary" id="create">Create</button>
+          <button class="btn btn-secondary" id="change">Change</button>
+          <button class="btn btn-danger" id="delete">Delete</button>
+        </div>
+      </div>
+    </div>
+    <div class="container list-wrapper">
+      <div class="row">
+        <div class="col-12">
+          <ul class="list-group" id="list">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type='module' src="script.js"></script>
+  </body>
+</html>
