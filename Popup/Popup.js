@@ -17,7 +17,7 @@ class Popup {
     this.self.style.top = `${y}px`;
     this.self.classList.add('show');
 
-    setTimeout(this.hide.bind(this), 1000);
+    setTimeout(this.hide.bind(this), 2000);
   }
 }
 

@@ -1,57 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1 class="site-header">Test app</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="form-group">
-            <label for="text">Text</label>
-            <input type="text" class="form-control" id="text" placeholder="Type some text here">
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="form-group">
-            <label for="color">Color</label>
-            <input type="text" class="form-control" id="color" placeholder="Type color here">
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="form-group">
-            <label for="marker">Font weight</label>
-            <select class="form-control" id="weight">
-              <option value="normal">Normal</option>
-              <option value="bold">Bold</option>
-              <option value="lighter">Light</option>
-            </select>
-          </div>
-        </div>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <article>
+    <div class="photo">
+      <img src="./images/photo.jpg" alt="photo">
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-6 offset-3 btn-container">
-          <button class="btn btn-primary" id="create">Create</button>
-          <button class="btn btn-secondary" id="change">Change</button>
-          <button class="btn btn-danger" id="delete">Delete</button>
-        </div>
-      </div>
+    <div>
+      <a target="_blank" href="./images/cv.jpg">
+        <img src="./images/cv.jpg" alt="cv">
+      </a>
     </div>
-    <div class="container list-wrapper">
-      <div class="row">
-        <div class="col-12">
-          <ul class="list-group" id="list">
-          </ul>
-        </div>
-      </div>
+  </article>
+
+  <article class="info">
+    <h1>Шкуратова Ольга</h1>
+    <h3>Junior Front-end developer</h3>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Учреждение образования</th>
+          <th>Специализация</th>
+          <th>Дата окончания</th>
+        </tr>
+        <tr>
+          <td><a href="https://gomel.itstep.by/">Компьютерная академия "ШАГ"</a></td>
+          <td>Front-end разработка</td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.gsu.by/">ГГУ им. Ф. Скорины</a></td>
+          <td>Правоведение</td>
+          <td>2011</td>
+        </tr>
+
+      </table>
     </div>
-    <script type='module' src="script.js"></script>
-  </body>
+
+    <div class="table">
+      <table class="skills">
+        <tr>
+          <th></th>
+          <th>Технические навыки</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>HTML</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>CSS/SCSS</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>JavaScript</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Git</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Bootstrap</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>React</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Redux</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Redux-thunk</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Styled-components</td>
+        </tr>
+      </table>
+    </div>
+    <form action="textarea1.php" method="post">
+      <textarea rows="5" cols="50" name="text" id="comment"></textarea>
+      <p><input type="submit" value="Проверить" id="button"></p>
+      <span id="message"></span>
+      <p><input id="phone" name="phone" type="tel" placeholder="+375XXXXXXXXX"
+          pattern="^\+375(29|25|44|33)(\d{3})(\d{2})(\d{2})$"></p>
+    </form>
+  </article>
+
+  <script type='module' src="script.js"></script>
+</body>
+
 </html>
